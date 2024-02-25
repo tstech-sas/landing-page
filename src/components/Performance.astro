@@ -1,0 +1,49 @@
+---
+import PerformanceCard from "./PerformanceCard.astro";
+---
+
+<section
+  class="relative mx-auto mb-20 mt-20 max-w-7xl px-4 text-center sm:mt-32 sm:px-6 md:mt-40 md:px-8"
+>
+  <h1
+    class="text-center text-3xl font-extrabold tracking-tight text-slate-700 dark:text-slate-200 sm:text-5xl"
+  >
+    <span class="text-gradient">Rápido, Responsivo</span> y Optimizado
+  </h1>
+  <p
+    class="mx-auto mt-8 max-w-3xl pb-10 text-center text-lg text-slate-600 dark:text-slate-400"
+  >
+    Entendemos la importancia de ser visibles y accesibles en todos los
+    dispositivos, y trabajamos incansablemente para asegurar una experiencia de
+    usuario inigualable en cada visita.
+  </p>
+  <div class="mt-8 grid grid-cols-1 gap-8 sm:grid-cols-3">
+    <PerformanceCard
+      title="Rendimiento"
+      detail="Evaluamos meticulosamente diversas métricas para optimizar al máximo el rendimiento de tu sitio, garantizando una experiencia web fluida y eficiente"
+    />
+    <PerformanceCard
+      title="Accesibilidad"
+      detail="Creemos firmemente en la web para todos. Nuestro enfoque en accesibilidad garantiza que tu sitio no solo cumple con los estándares, sino que brinda una experiencia amigable y adaptada para cada visitante"
+    />
+    <PerformanceCard
+      title="SEO"
+      detail="La optimización para motores de búsqueda es esencial en el mundo digital actual. Nos comprometemos a diseñar sitios que no solo sean atractivos, sino también amigables para SEO, asegurando que tu marca sea fácilmente encontrada en línea"
+    />
+  </div>
+</section>
+
+<style>
+  .text-gradient {
+    background-image: linear-gradient(
+      45deg,
+      rgb(45, 212, 191),
+      rgb(52, 211, 153) 30%,
+      white 60%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 400%;
+    background-position: 0%;
+  }
+</style>

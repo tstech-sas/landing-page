@@ -1,0 +1,58 @@
+---
+interface Props {
+  title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<!doctype html>
+<html lang="es" class="dark [--scroll-mt:9.875rem] lg:[--scroll-mt:6.3125rem]">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>{title}</title>
+    <meta name="generator" content={Astro.generator} />
+    <meta
+      name="description"
+      content="TSTECH - Trámites y servicios tecnológicos s.a.s es una empresa de desarrollo de software empresarial a la medida, consultorias, y almacenamiento de datos. Combinamos innovación y eficiencia para transformar tus ideas en herramientas digitales potentes"
+    />
+    <meta name="robots" content="index, follow" />
+    <meta property="og:url" content="https://tstech.com.co/" />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:title"
+      content="TSTECH - Trámites y servicios tecnológicos s.a.s"
+    />
+    <meta
+      property="og:description"
+      content="Empresa de desarrollo de software a la medida, consultorias, procesamiento y almacenamiento de datos."
+    />
+    <meta property="og:image" content="/assets/images/op.png" />
+    <!--Favicons-->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="180x180"
+      href="/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/assets/favicons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/assets/favicons/favicon-16x16.png"
+    />
+    <link rel="icon" type="icon" href="/assets/favicons/favicon.ico" />
+  </head>
+  <body
+    class="bg-white text-slate-500 antialiased dark:bg-[#10151d] dark:text-slate-400"
+  >
+    <slot />
+  </body>
+</html>
